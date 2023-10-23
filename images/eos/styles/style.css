@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header {
+    height: 108px;
+    display: flex;
+}
+
+.logo {
+    width: 165px;
+    height: 75px;
+    margin-top: 16px;
+    margin-right: 44px;
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    margin-top: 39px;
+    gap: 32px;
+    margin-right: 20%;
+}
+
+.menu_link {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 35px; /* 184.211% */
+}
+
+.cta {
+    display: flex;
+    margin-right: auto;
+}
+
+.number {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 35px; /* 184.211% */
+    margin-top: 36px
+}
+
+.cta_button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px; /* 184.211% */
+    margin-top: 24px;
+    padding: 12px 24px;
+    background: #F6DE1C;
+    height: 35px;
+    width: 186px;
+    text-align: center;
+    margin-left: 32px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero_image {
+    width: 629px;
+    height: 399px;
+    object-fit: cover;
+    margin-top: 178px;
+    margin-right: auto;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: 8%;
+}
+
+.slogan {
+    font-size: 55px;
+    line-height: 67.2px; /* 122.182% */
+    max-width: 365px;
+    margin-bottom: 14px;
+    margin-top: 165px;
+}
+
+.description {
+    font-size: 24px;
+    line-height: 42px; /* 175% */
+    max-width: 425px;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.hero_cta {
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px; /* 194.444% */
+    padding: 12px 24px;
+    background: #F6DE1C;
+    height: 35px;
+    width: 186px;
+}
+
+.specialization_header {
+    color: #000;
+    font-family: DM Serif Text;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.8px; /* 120% */
+    margin-top: 331px;
+    margin-left: 17%;
+}
+
+.specialization_desc {
+    max-width: 605px;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 175% */
+    margin-top: 25px;
+    margin-left: 17%;
+    margin-bottom: 51px;
+}
+
+.specialization_cards {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 160px;
+}
+
+.card {
+    display: block;
+    width: 397px;
+    height: 442px;
+    border-radius: 2px;
+    border: 1px solid #E4ECF0;
+    background: #FFF;
+    box-shadow: 0px 24px 24px 0px rgba(0, 72, 109, 0.20);
+}
+
+.card_icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding-top: 41px;
+    margin-left: 33px;
+    margin-bottom: 40px;
+}
+
+.card_header {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 150% */
+    margin-left: 33px;
+    margin-bottom: 12px;
+}
+
+.card_desc {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; 
+    margin-left: 33px;
+    max-width: 332px;
+}
+
+.card_readmore {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; 
+    margin-left: 33px;
+}
+
+.about {
+    display: block;
+    width: 1270px;
+    height: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px /*Временно*/;
+}
+
+.about_wrap {
+    display: block;
+    width: 423px;
+    height: 491px;
+    border-radius: 2px;
+    background: #F6DE1C;
+}
+
+.about_header {
+    color: #000;
+    font-family: DM Serif Text;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    margin-left: 56px;
+    padding-top: 83px;
+    margin-bottom: 35px;
+}
+
+.about_desc {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    max-width: 309px;
+    margin-left: 56px;
+    margin-bottom: 25px;
+}
+
+.about__readmore_cta {
+    display: block;
+    width: 133px;
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 12px 24px;
+    margin-left: 56px;
+    border-radius: 4px;
+    background: #EEE;
+}
