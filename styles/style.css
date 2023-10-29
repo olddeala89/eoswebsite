@@ -46,10 +46,8 @@ a {
 }
 
 .menu_link:hover {
-    color: #F6DE1C;
-    font-style: italic;
     text-decoration: underline;
-    text-shadow: 2px 2px 6px rgba(140, 140, 140, 1);
+    text-shadow: 2px 2px 6px rgb(140, 140, 140);
     transition: 150ms;
 }
 
@@ -80,14 +78,8 @@ a {
 }
 
 .cta_button:hover {
-    border: solid 3px #000;
-    height: 32px;
-    width: 183px;
-    background: transparent;
-    font-weight: bold;
-    font-style: italic;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     transition: 400ms;
-    border-radius: 10px;
 }
 
 .hero {
@@ -137,14 +129,8 @@ a {
 }
 
 .hero_cta:hover {
-    border: solid 3px #000;
-    height: 32px;
-    width: 183px;
-    background: transparent;
-    font-weight: bold;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     transition: 400ms;
-    font-style: italic;
-    border-radius: 10px;
 }
 
 .specialization_header {
@@ -220,6 +206,7 @@ a {
 }
 
 .card_readmore {
+    display: block;
     color: #000;
     font-family: DM Sans;
     font-size: 19px;
@@ -227,6 +214,14 @@ a {
     font-weight: 400;
     line-height: 35px; 
     margin-left: 33px;
+    margin-top: 6%;
+    transition: 200ms;
+}
+
+.card_readmore:hover {
+    color: #0045b5;
+    transition: 200ms;
+    font-size: 24px;
 }
 
 .about {
@@ -292,7 +287,6 @@ a {
 
 .about__readmore_cta:hover {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    border-radius: 10px;
     font-weight: bold;
     transition: 150ms;
 }
@@ -407,11 +401,10 @@ a {
 
 .connect_link:hover {
     box-shadow: 5px 3px 20px 0px rgba(34, 60, 80, 0.31);
-    color: #F6DE1C;
-    font-weight: bold;
-    font-style: italic;
+    border: solid 1px #000;
+    color: #000;
+    background: #EEE;
     transition: 150ms;
-    border-radius: 10px;
 }
 
 .footer {
@@ -427,7 +420,29 @@ a {
     font-weight: 400;
     line-height: 35px; /* 250% */
     margin-left: 24px;
+    margin-right: auto;
     padding-top: 7px;
+}
+
+.getup {
+    color: #99B6C5;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 250% */
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.getup:hover {
+    color: #EEE;
+    font-size: 18px;
+    transition: 200ms;
+    padding-top: 9px;
 }
 
 .social {
@@ -592,5 +607,33 @@ a {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .footer {
+        display: block;
+    }
+
+    .copyright {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 289px;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .getup {
+        margin: 0px;
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+
+    .social {
+        margin: 0px;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }
