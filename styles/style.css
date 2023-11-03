@@ -230,7 +230,7 @@ a {
     height: 680px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/64101fd1d3d58504631984.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 200px /*Временно*/;
@@ -458,6 +458,7 @@ a {
     height: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1297px) {
@@ -635,5 +636,24 @@ a {
         margin: 0px;
         justify-content: center;
         padding-bottom: 10px;
+    }
+
+    .connect_header {
+        padding-top: 30px;
+        font-size: 38px;
+    }
+
+    .connect_subheader {
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .connect {
+        height: 341px;
+    }
+
+    .slogan {
+        margin-top: 15px;
     }
 }
