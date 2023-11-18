@@ -64,13 +64,14 @@ a {
 }
 
 .cta_button {
+    display: block;
     font-size: 18px;
     font-weight: 400;
     line-height: 35px; /* 184.211% */
     margin-top: 24px;
     padding: 12px 24px;
     background: #F6DE1C;
-    height: 35px;
+    height: 58px;
     width: 186px;
     text-align: center;
     margin-left: 32px;
@@ -123,7 +124,7 @@ a {
     line-height: 35px; /* 194.444% */
     padding: 12px 24px;
     background: #F6DE1C;
-    height: 35px;
+    height: 58px;
     width: 186px;
     transition: 400ms;
 }
@@ -460,6 +461,97 @@ a {
     padding-bottom: 10px;
     cursor: pointer;
 }
+
+/*Модальное окно*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: block;
+    width: 350px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #E4ECF0;
+    background: #FFF;
+    box-shadow: 0px 24px 24px 0px rgba(213, 241, 255, 0.317);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.modal_input, .modal_button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+
+.modal_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    color: white;
+    background: #171717;
+    border-radius: .6rem;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 250ms;
+  }
+
+.modal_button:hover {
+    background: #0c66ed;
+    transition: 250ms;
+}
+
+/*Адаптация*/
 
 @media screen and (max-width: 1297px) {
     .wrapper {

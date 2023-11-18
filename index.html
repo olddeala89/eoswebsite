@@ -20,7 +20,7 @@
         </nav>
         <div class="cta">
             <a href="tel:+79184008265" class="number">+79184008265</a>
-            <a href="https://t.me/eos25bot" class="cta_button">Обратная связь</a>
+            <button class="cta_button" onclick="showModal()">Обратная связь</button>
         </div>
     </header>
     <main>
@@ -29,7 +29,7 @@
                 <h2 class="slogan">Наши знания - 
                     Ваш успех !</h2>
                 <p class="description">Наша компания специально создана для собственников бизнеса. Мы делаем всю бухгалтерскую работу исключительно из интересов собственника бизнеса.</p>
-                <a href="https://t.me/eos25bot" class="hero_cta">Обратная связь</a>
+                <button class="hero_cta" onclick="showModal()">Обратная связь</button>
             </div>
             <img src="./images/lot.jpg" alt="" class="hero_image">
         </div>
@@ -90,7 +90,7 @@
         <div class="connect" id="connect">
             <h5 class="connect_header">Готовы прокачать свой бизнес?</h5>
             <p class="connect_subheader">Получите первую консультацию бесплатно прямо сейчас</p>
-            <a href="https://t.me/eos25bot" class="connect_link">Связаться</a>
+            <button class="connect_link" onclick="showModal()">Связаться</button>
         </div>
     </main>
     <footer class="footer">
@@ -102,6 +102,20 @@
             <img src="./images/Telegram_logo.svg" alt="" class="social_link" id="tg">
         </div>
     </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <form class="contactForm" id="contactForm">
+                <label class="label" for="name">Имя:</label>
+                <input type="text" autocomplete="off"id="name" name="name" class="input" placeholder="Ваше имя" required>
+
+                <label class="label" for="email">Номер телефона:</label>
+                <input type="tel" autocomplete="off" id="phone" name="phone" class="input" placeholder="+7 (999) 999 99 99" required>
+
+                <button class="modal_button" type="submit" id="submitBtn">Отправить</button>
+            </form>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
